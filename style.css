@@ -1,0 +1,88 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+header {
+  text-align: center;
+  background-image: url(https://as.chdev.tw/web/article/3/a/4/3f96a0d5-a95d-4c3d-8c11-e3a26246d8401553853342.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: 130px;
+}
+
+section {
+  text-align: center;
+  padding: 80px 0px;
+}
+section .section-heading {
+  font-size: 36px;
+  margin-top: 0px;
+}
+section .section-subheading {
+  font-size: 16px;
+}
+
+.col-sports {
+  padding: 40px;
+}
+.col-sports img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+section.story {
+  background-color: #eee;
+}
+section.story .icon-fat {
+  width: 80px;
+}
+section.story .col-md-6 {
+  padding: 20px;
+}
+
+section.pictures {
+  padding: 0px;
+  color: white;
+}
+section.pictures .col-md-6 {
+  padding: 120px;
+  cursor: pointer;
+}
+section.pictures .col-md-6:hover p {
+  opacity: 0.7;
+}
+section.pictures .col-md-6:hover:before {
+  filter: brightness(0.5);
+  background-size: 150%;
+}
+section.pictures .col-md-6:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition-duration: 0.5s;
+  background-position: center;
+}
+section.pictures .pic1:before {
+  background-image: url(https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2015/11/06/20151106-111727_U4821_M100337_7668.jpg?itok=64Nji8hb);
+  background-size: 140% auto;
+}
+section.pictures .pic2:before {
+  background-image: url(https://www.mirrormedia.com.tw/assets/images/20210711141950-8bd9ef462283da643570dab63931ef70-mobile.png);
+  background-size: 140% auto;
+}
+section.pictures p {
+  opacity: 0.5;
+  transition-duration: 0.5s;
+}
