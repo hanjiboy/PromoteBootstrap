@@ -1,0 +1,71 @@
+doctype html(lang='en')
+head
+  meta(charset='UTF-8')  
+  title PromoteBootstrap  
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css')
+  link(rel='stylesheet', href='./style.css')
+body
+// partial:index.partial.html
+header.jumbotron.text-center
+  .container
+    h3 鍛鍊好身材
+    h1 體態轉換
+section.intro
+  .container
+    .row
+      .col-md-12
+        h2.section-heading 最後一次運動是什麼時候呢??
+        h3.section-subheading.text-muted 運動時的揮汗多麼舒暢
+    .row
+      .col-md-4.col-sports
+        img(src="https://lesismagazine.files.wordpress.com/2017/01/e68891e69c89e8b791e6ada5e68682e9acb1e79787efbc81e8b791e6ada5e8a893e7b7b4e79a844e5808be9bb83e98791e6b395e589874.jpg?w=750", alt="")
+        h4 跑步
+        h6.text-muted 享受節奏與呼吸
+      .col-md-4.col-sports
+        img(src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2019/11/29/draft/7129244.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=760", alt="")
+        h4 健身
+        h6.text-muted 享受肌肉緊繃的痠疼
+      .col-md-4.col-sports
+        img(src="https://img.alicdn.com/imgextra/i1/TB1RNpKPpXXXXb9apXXXXXXXXXX_!!0-item_pic.jpg", alt="")
+        h4 游泳
+        h6.text-muted 像海底動物般的生存
+section.story
+  .container
+    .row
+      .col-md-12
+        img.icon-fat(src="https://iphoto.macsc.com/icon/icon/256/20190719/48833/2244791.png", alt="")
+        h2.section-heading 肥胖的由來
+        h3.section-subheading.text-muted 成為俊男美女，其實很容易
+    .row
+      .col-md-6
+        p.h2 定義
+        p.content 肥胖指的是體脂肪過度堆積而對健康造成負面影響的身體狀態。肥胖最初的定義以身體質量指數（Body Mass Index, BMI）為指標。
+      .col-md-6
+        p.h2 身體質量指數
+        p.content 身體質量指數定義為體重（公斤）除以身高的平方（公尺）。
+section.pictures
+  .container-fluid
+    .row
+      .col-md-6.pic1
+        .text-panel
+          h1 炸物
+          p 週末相約喝酒最棒了，搭配炸物，那更是完美
+      .col-md-6.pic2
+        .text-panel
+          h1 飲品
+          p 口乾舌燥，就想來點冰涼的飲料
+section.end
+  .container
+    .row
+      .col-md-12
+        h2.section-heading 歡迎分享瘦身經驗
+        h3.section-subheading.text-muted 留言給小編讓小編將更多方法與大家分享
+        .form-label ✉ Email
+        input.form-control(placeholder="name@example.com")
+        .form-label ✍ Share experience
+        textarea.form-control(placeholder="Message...")
+        br
+        .btn.btn-success 發送
+// partial
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js')
